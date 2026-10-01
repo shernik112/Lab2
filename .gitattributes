@@ -1,0 +1,96 @@
+# Normalize repository text to LF.
+* text=auto eol=lf
+
+# Godot text/project formats
+*.godot       text eol=lf
+*.tscn        text eol=lf
+*.tres        text eol=lf
+*.cfg         text eol=lf
+*.import      text eol=lf
+*.uid         text eol=lf
+*.gd          text eol=lf
+*.gdshader    text eol=lf
+*.gdshaderinc text eol=lf
+*.shader      text eol=lf
+
+# C# / .NET
+*.cs          text eol=lf diff=csharp
+*.csproj      text eol=lf
+*.sln         text eol=lf
+*.props       text eol=lf
+*.targets     text eol=lf
+
+# Common text/data
+*.json        text eol=lf
+*.xml         text eol=lf
+*.yaml        text eol=lf
+*.yml         text eol=lf
+*.toml        text eol=lf
+*.md          text eol=lf
+*.txt         text eol=lf
+*.csv         text eol=lf
+*.po          text eol=lf
+*.pot         text eol=lf
+*.svg         text eol=lf
+*.gltf        text eol=lf
+*.obj         text eol=lf
+*.mtl         text eol=lf
+
+# ---------------------------------------------------------------------------
+# Git LFS
+# ---------------------------------------------------------------------------
+# Large authoring/source assets and heavy binary media.
+# Git LFS must be installed in every developer/CI/coding-agent environment.
+
+# Blender / DCC source
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.psd   filter=lfs diff=lfs merge=lfs -text
+*.psb   filter=lfs diff=lfs merge=lfs -text
+*.kra   filter=lfs diff=lfs merge=lfs -text
+
+# Binary 3D interchange
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+
+# High-bit-depth / large textures
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+
+# Uncompressed / usually large audio
+*.wav  filter=lfs diff=lfs merge=lfs -text
+*.flac filter=lfs diff=lfs merge=lfs -text
+
+# Video
+*.mp4  filter=lfs diff=lfs merge=lfs -text
+*.mov  filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+
+# Archives / packaged binary payloads
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.7z  filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------------------------
+# Ordinary binary assets kept in normal Git
+# ---------------------------------------------------------------------------
+# These are commonly small enough that forcing every file into LFS creates
+# unnecessary LFS objects/requests. Move a category above if this project
+# contains large files in it.
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.bmp   binary
+*.tga   binary
+*.ico   binary
+
+*.ogg   binary
+*.mp3   binary
+
+*.ttf   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary

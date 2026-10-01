@@ -1,0 +1,49 @@
+# Godot generated/cache data
+/.godot/
+/.import/
+/.mono/
+*.translation
+~*.dll
+mono_crash.*.json
+
+# C# build output
+/bin/
+/obj/
+
+# Visual Studio / Rider user-local state
+/.vs/
+/.idea/
+*.suo
+*.user
+*.userosscache
+*.rsuser
+*.sln.docstates
+*.csproj.user
+*.DotSettings.user
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+.directory
+
+# Editor/temporary files
+*~
+*.swp
+*.swo
+*.tmp
+
+# Blender backups.
+# Source *.blend files are tracked through Git LFS.
+*.blend[0-9]*
+
+# Keep these in Git:
+#   export_presets.cfg
+#   *.import
+#   *.uid
+#
+# Do not ignore Godot import metadata or UID sidecars.
+
+# If exported builds live inside the repository, use one explicit output
+# directory and ignore that exact directory, for example:
+# /exports/
